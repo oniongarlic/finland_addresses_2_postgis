@@ -1,0 +1,16 @@
+<OGRVRTDataSource> 
+ <OGRVRTLayer name="finland_addresses">
+  <SrcDataSource>finland_addresses.csv</SrcDataSource> 
+  <GeometryType>wkbPoint</GeometryType> 
+  <LayerSRS>EPSG:4326</LayerSRS> 
+  <!-- building_id,region,municipality,street,house_number,postal_code,latitude_wgs84,longitude_wgs84,building_use -->
+  <GeometryField encoding="PointFromColumns" y="latitude_wgs84" x="longitude_wgs84"/> 
+  <Field name="building_id" src="building_id" type="String" width="12"/>
+  <Field name="region" src="region" type="integer" />
+  <Field name="municipality" src="municipality" type="integer" />
+  <Field name="street" src="street" type="String" width="64"/>
+  <Field name="house_number" src="house_number" type="String" width="12"/>
+  <Field name="postal_code" src="postal_code" type="String" width="8" />
+  <Field name="building_use" src="building_use" type="integer" />
+ </OGRVRTLayer> 
+</OGRVRTDataSource>
