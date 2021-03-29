@@ -1,5 +1,5 @@
 #!/bin/sh
-FA=Finland_addresses_2020-11-13.csv
+FA=Finland_addresses_2021-02-05.csv
 DB=$USER
 
 echo "Converting to UTF-8"
