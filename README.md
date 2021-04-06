@@ -10,6 +10,14 @@ The dataset is available for download at:
 Extract the archive downloaded from the above opendata.fi site and put the file
 Finland_addresses_2021-02-05.csv in the current directory and run the script.
 
+## Requirements
+
+* iconv
+* ogr2ogr
+* PostgreSQL with PostGIS
+
+## Import
+
 It assumes a database with the current user already exists with PostGIS extensions, if 
 not create a database and run:
 
