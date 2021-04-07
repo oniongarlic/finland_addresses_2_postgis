@@ -10,6 +10,8 @@ The dataset is available for download at:
 Extract the archive downloaded from the above opendata.fi site and put the file
 Finland_addresses_2021-02-05.csv in the current directory and run the script.
 
+Note: The above data contains errors, there are points that are outside their correct area.
+
 ## Requirements
 
 * iconv
@@ -31,6 +33,12 @@ The imported data can be used to augment a Nominatim search index. Currently sup
 
 * Postal codes
 
-Import the data into the nominatim database and run create-nominatim-postcodes.sql
-
 Support for augmenting addresses is to be added.
+
+### Postal codes
+
+Import the data into the nominatim database and run the SQL scripts:
+
+* create-nominatim-postcodes.sql
+* update-fi-postcodes.sql
+
