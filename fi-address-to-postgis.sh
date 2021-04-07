@@ -2,6 +2,10 @@
 FA=Finland_addresses_2021-02-05.csv
 DB=$USER
 
+if [ $# -gt 0 ]; then
+ DB=$1
+fi
+
 echo "Converting to UTF-8"
 iconv -f ISO_8859-15 -t UTF-8 -o finland_addresses.csv $FA
 
