@@ -8,7 +8,10 @@ The dataset is available for download at:
 * https://www.opendata.fi/data/fi/dataset/postcodes
 
 Extract the archive downloaded from the above opendata.fi site and put the file
-Finland_addresses_2021-02-05.csv in the current directory and run the script.
+Finland_addresses_2021-05-17.csv in the current directory and run the script or
+optionally the path to the file as first argument to the scripts.
+
+Usage: fi-address-to-postgis.sh input.csv dbname
 
 Note: The above data contains errors, there are points that are outside their correct area.
 
