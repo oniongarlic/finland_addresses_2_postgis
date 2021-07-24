@@ -3,15 +3,13 @@
 Simple helper script to convert the Addresses, postal codes and 
 WGS84-coordinates of Finnish buildings open data to PostgreSQL PostGIS table.
 
-The dataset is available for download at:
+The upstream dataset is available for download at:
 
 * https://www.opendata.fi/data/fi/dataset/postcodes
 
-Extract the archive downloaded from the above opendata.fi site and put the file
-Finland_addresses_2021-05-17.csv in the current directory and run the script or
-optionally the path to the file as first argument to the scripts.
+The current data file is contained in this repository as xz archive to make usage as easy as possible.
 
-Usage: fi-address-to-postgis.sh input.csv dbname
+Usage: fi-address-to-postgis.sh dbname
 
 Note: The above data contains errors, there are points that are outside their correct area.
 
