@@ -15,3 +15,8 @@ dropdb --if-exists nominatimFI
 
 echo "Starting import"
 nominatim import -v --osm-file finland-latest.osm.pbf
+
+echo "Checking import"
+nominatim admin --check-database
+
+echo "Import done"
