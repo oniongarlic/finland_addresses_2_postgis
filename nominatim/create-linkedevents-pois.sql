@@ -45,4 +45,3 @@ create view linkedevents_pois as select a.osm_id,
  vs.name in ('Turku', 'Kaarina', 'Aura', 'Lieto', 'Marttila', 'Masku', 'Mynämäki', 'Naantali', 'Nousiainen', 'Paimio',  'Raisio', 'Rusko', 'Sauvo') and
  ST_Within(a.centroid, vs.wkb_geometry);
 
-\copy (select * from linkedevents_pois) to 'poi-dump-le.csv' with csv header

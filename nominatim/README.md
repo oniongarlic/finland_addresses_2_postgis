@@ -17,4 +17,4 @@ Run doit.sh to do everything, or:
 * make-nominatim.sh Build and install nominatim
 * import-finland-nominatim.sh Download and import 
 * augment-nominatim-data.sh Augment with Finland_addresses data
-* dump-vs.sh Dump CSV file with POIs
+* dump-vs-csv.sh Dump CSV file with POIs

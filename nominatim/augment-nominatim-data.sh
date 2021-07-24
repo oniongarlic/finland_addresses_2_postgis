@@ -12,3 +12,6 @@ psql -f update-fi-postcodes.sql nominatimFI
 
 echo "Add VS geodata"
 psql -f create-vs-kunta.sql nominatimFI
+
+echo "Add LE view"
+psql -f create-linkedevents-pois.sql nominatimFI
