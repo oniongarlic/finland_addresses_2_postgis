@@ -1,7 +1,7 @@
 #!/bin/bash
 DB=$USER
 
-if [ $# -gt 1 ]; then
+if [ $# -gt 0 ]; then
  DB=$1
 fi
 

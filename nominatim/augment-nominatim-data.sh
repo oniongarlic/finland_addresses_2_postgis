@@ -2,7 +2,7 @@
 
 set -e
 
-../fi-address-to-postgis.sh Finland_addresses_2021-05-17.csv nominatimFI
+(cd .. && ./fi-address-to-postgis.sh nominatimFI)
 
 echo "Postcodes"
 psql -f create-nominatim-postcodes.sql nominatimFI
