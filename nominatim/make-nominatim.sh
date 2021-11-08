@@ -17,9 +17,9 @@ echo "Python modules..."
 sudo pip3 install python-dotenv
 
 echo "Checking for Nominatim sources..."
-if [ ! -f Nominatim-3.7.2.tar.bz2 ]; then
+if [ ! -f Nominatim-4.0.0.tar.bz2 ]; then
  echo "Downloading..."
- wget https://www.nominatim.org/release/Nominatim-3.7.2.tar.bz2
+ wget https://www.nominatim.org/release/Nominatim-4.0.0.tar.bz2
 fi
 
 if [ -d build ]; then
@@ -29,10 +29,10 @@ fi
 mkdir build
 
 echo "Extracting nominatim sources..."
-tar xf Nominatim-3.7.2.tar.bz2 -C build
+tar xf Nominatim-4.0.0.tar.bz2 -C build
 
 echo "Building nominatim"
-cd build && mkdir nominatim && cd nominatim && cmake ../Nominatim-3.7.2 && make -j4
+cd build && mkdir nominatim && cd nominatim && cmake ../Nominatim-4.0.0 && make -j4
 
 echo "Installing nominatim"
 sudo make install
